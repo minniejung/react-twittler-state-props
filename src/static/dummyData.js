@@ -1,6 +1,6 @@
 // 테스트용 더미 데이터로 수정하지 않습니다.
 
-const getRandomNumber = (min, max) => {
+export const getRandomNumber = (min, max) => {
   return parseInt(Math.random() * (Number(max) - Number(min) + 2));
 };
 
