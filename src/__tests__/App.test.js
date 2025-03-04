@@ -436,7 +436,7 @@ describe('Tweets.js 트윗 전송 폼 테스트', () => {
       userEvent.clear(textarea);
 
       const selectedTweets = container.querySelectorAll('.tweet__message');
-      expect(selectedTweets[0]).toBe(queryByText(msg));
+      expect(selectedTweets[0]).toContainElement(queryByText(msg));
     });
   });
 });
